@@ -3,7 +3,7 @@ Contributors: cgarvey
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6137112
 Tags: email address, email cloak, harvest, cloaking, spam
 Requires at least: 3.5.0
-Tested up to: 3.8.1
+Tested up to: 3.9
 Stable tag: rel_1-01
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
