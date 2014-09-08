@@ -3,7 +3,7 @@
 Plugin Name: Email JavaScript Cloaker
 Plugin URI: http://cgarvey.ie/
 Description: A simple plugin to use JavaScript to cloak email addresses
-Version: 1.01
+Version: 1.02
 Author: Cathal Garvey
 Author URI: http://cgarvey.ie/
 License: GPLv3
