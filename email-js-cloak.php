@@ -3,7 +3,7 @@
 Plugin Name: Email JavaScript Cloaker
 Plugin URI: http://cgarvey.ie/
 Description: A simple plugin to use JavaScript to cloak email addresses
-Version: 1.01
+Version: 1.03
 Author: Cathal Garvey
 Author URI: http://cgarvey.ie/
 License: GPLv3
@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
 
 /**
- * Copyright 2013 Cathal Garvey (http://cgarvey.ie/)
+ * Copyright 2013-2014 Cathal Garvey (http://cgarvey.ie/)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
  * @package Email JavaScript Cloaker
- * @copyright 2013 Cathal Garvey
+ * @copyright 2013-2014 Cathal Garvey
 */
 
 // Plugin priority (allow it to be overridden externally)
@@ -42,7 +42,7 @@ foreach( array( "the_content", "the_excerpt", "widget_text", "comment_text", "co
 function email_js_cloak( $string ) {
 	// Replace / reformat email addresses (to reduce risk of harvesting) (for [email x@y.z] shortcut)
 	$regex = "/\[ *email +([^\]]*)\]/";
-	$ret = preg_replace_callback( $regex, email_js_cloak_regex_callback, $string );
+	$ret = preg_replace_callback( $regex, 'email_js_cloak_regex_callback', $string );
 
 	// Add text to explain email address format for no-JavaScript clients (if [emailnojs] shortcode is present)
 	$regex = "/\[ *emailnojs *\]/";

@@ -3,8 +3,8 @@ Contributors: cgarvey
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6137112
 Tags: email address, email cloak, harvest, cloaking, spam
 Requires at least: 3.5.0
-Tested up to: 3.8.1
-Stable tag: rel_1-01
+Tested up to: 4.0
+Stable tag: rel_1-03
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -23,6 +23,8 @@ For any email address you include in your content, using the custom shortcode of
 They will see the strange format ("barack -at- whitehouse -dot- gov"). You can include a footnote using a custom short code [emailnojs] which will explain the strange format, if you wish to cater for that tiny minority of visitors.
 
 == Changelog ==
+* Version 1.03 - Fix PHP callback warning (thanks to Simon Schaller).
+* Version 1.02 - Confirm compatibility with WordPress v4.0.
 * Version 1.01 - Remove debug code (affects earlier MSIE versions).
 * Version 1.00 - Initial release.
 
