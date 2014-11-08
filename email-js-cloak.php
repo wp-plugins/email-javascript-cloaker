@@ -42,7 +42,7 @@ foreach( array( "the_content", "the_excerpt", "widget_text", "comment_text", "co
 function email_js_cloak( $string ) {
 	// Replace / reformat email addresses (to reduce risk of harvesting) (for [email x@y.z] shortcut)
 	$regex = "/\[ *email +([^\]]*)\]/";
-	$ret = preg_replace_callback( $regex, email_js_cloak_regex_callback, $string );
+	$ret = preg_replace_callback( $regex, 'email_js_cloak_regex_callback', $string );
 
 	// Add text to explain email address format for no-JavaScript clients (if [emailnojs] shortcode is present)
 	$regex = "/\[ *emailnojs *\]/";
